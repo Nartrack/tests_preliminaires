@@ -1,3 +1,0 @@
-/home/nartrack/Documents/python_example/build/CMakeFiles/rebuild_cache.dir
-/home/nartrack/Documents/python_example/build/CMakeFiles/main.dir
-/home/nartrack/Documents/python_example/build/CMakeFiles/edit_cache.dir
