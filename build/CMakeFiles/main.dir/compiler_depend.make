@@ -98,7 +98,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/crypt.h \
   /usr/include/assert.h \
   /usr/include/python3.9/pyport.h \
   /usr/include/inttypes.h \
@@ -387,10 +386,16 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/local/include/pybind11/options.h \
   /usr/local/include/pybind11/detail/class.h \
   /usr/local/include/pybind11/detail/init.h \
+  ../src/example.cpp \
+  /usr/include/c++/9/iostream \
   ../src/example.h
 
 
 ../src/example.h:
+
+/usr/include/c++/9/iostream:
+
+../src/example.cpp:
 
 /usr/local/include/pybind11/detail/init.h:
 
@@ -453,6 +458,8 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/9/bits/shared_ptr_base.h:
 
 /usr/include/c++/9/bits/shared_ptr.h:
+
+/usr/include/python3.9/longobject.h:
 
 /usr/include/ctype.h:
 
@@ -576,8 +583,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/python3.9/patchlevel.h:
 
-/usr/include/crypt.h:
-
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -589,10 +594,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/c++/9/bits/unique_ptr.h:
-
-/usr/include/c++/9/bits/stringfwd.h:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -900,8 +901,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/python3.9/longobject.h:
-
 /usr/include/python3.9/longintrepr.h:
 
 /usr/include/python3.9/boolobject.h:
@@ -1033,6 +1032,10 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/python3.9/pyctype.h:
 
 /usr/include/python3.9/pystrcmp.h:
+
+/usr/include/c++/9/bits/stringfwd.h:
+
+/usr/include/c++/9/bits/unique_ptr.h:
 
 /usr/include/python3.9/cpython/fileutils.h:
 
