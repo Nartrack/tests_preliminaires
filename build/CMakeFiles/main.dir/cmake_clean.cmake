@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
-  "main.cpython-39-x86_64-linux-gnu.so"
+  "main.cpython-38-x86_64-linux-gnu.so"
   "main.pdb"
 )
 

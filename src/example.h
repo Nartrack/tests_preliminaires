@@ -1,16 +1,17 @@
-using namespace std;
+//#include <pybind11/pybind11.h>
 
-class hello
-{
-public:
-    string nom;
-    hello(string nom);
-    void hello_nom();
-};
+/*
+#class demo
+#{
+#private :
+#	std::string name;
+#public :
+#	std::string sayHello();
+#	std::string personalizedHello(std::string);
+#	void setName(std::string);
+#	std::string getName();
+#};
+*/
+int add(int i, int j);
 
-class hello_plus : public hello
-{
-public:
-    hello_plus(string nom);
-    void hello_nom();
-};
+std::string hello(std::string name);
