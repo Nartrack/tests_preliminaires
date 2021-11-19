@@ -1,20 +1,29 @@
-#include <string>
+#include <pybind11/pybind11.h>
 #include <iostream>
 #include "example.h"
 using namespace std;
 
-#define STRINGIFY(x) #x
-#define MACRO_STRINGIFY(x) STRINGIFY(x)
-
-int add(int i, int j) {
-    return i + j;
-}
-
-string hello(string name) {
-    string x;
-    cout << "Please type something "<<"displayed using c++ cout : ";
-    cin >> x;
-    cout << "you entered : "+x;
-    return "hello VERSION MODIFIEE 10"+name;
+hello::hello(string nom) : nom(nom)
+{
     
 }
+void hello::hello_nom()
+{
+    cout << "Hello " << nom << " !";
+}
+
+hello_plus::hello_plus(string nom) : hello(nom)
+{
+
+}
+
+void hello_plus::hello_nom()
+{
+    this->nom = "Loulou";
+    hello_nom();
+    cout << "et toi ?";
+}
+
+namespace py = pybind11;
+
+

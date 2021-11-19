@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -flto -shared  -o main.cpython-38-x86_64-linux-gnu.so CMakeFiles/main.dir/src/main.cpp.o 
+/usr/bin/c++ -fPIC -flto -shared  -o main.cpython-39-x86_64-linux-gnu.so CMakeFiles/main.dir/src/main.cpp.o 
