@@ -18,12 +18,21 @@ PYBIND11_MODULE(main, m)
            subtract
     )pbdoc";
 
-    py::class_<hello>(m, "hello")
+    py::class_<famille>(m, "famille")
         .def(py::init<string &>())
-        .def("hello_nom", &hello::hello_nom);
-    py::class_<hello_plus>(m, "hello_plus")
-        .def(py::init<string &>())
-        .def("hello_nom", &hello::hello_nom);
+        .def_property("nom", &famille::getNom, &famille::setNom)
+        .def("hello_nom", &famille::hello_nom);
+    py::class_<famille_part, famille>(m, "famille_part")
+        .def(py::init<string, string &>())
+        .def_property("particule", &famille_part::getParticule, &famille_part::setParticule)
+        .def("hello_nom", &famille_part::hello_nom);
+    py::class_<personne>(m, "personne")
+        .def(py::init<string, famille &>())
+        .def(py::init<string, string &>())
+        .def(py::init<string, string, string &>())
+        .def_property("prenom", &personne::getPrenom, &personne::setPrenom)
+        .def_property("famille", &personne::getFamille, &personne::setFamille)
+        .def("bonjour", &personne::bonjour);
 
 #ifdef VERSION_INFO
     m.attr("__version__") = MACRO_STRINGIFY(VERSION_INFO);
