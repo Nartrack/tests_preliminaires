@@ -33,6 +33,7 @@ void famille_part::hello_nom()
 {
     famille::hello_nom();
     cout << "ou devrais-je dire " << this->getParticule() << " " << this->getNom();
+    fflush(stdout);
 }
 
 personne::personne(string prenom, famille fam) : prenom(prenom), fam(fam) {}
