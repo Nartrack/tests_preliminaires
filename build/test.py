@@ -9,7 +9,7 @@ print("")
 
 fam2 = m.famille_part("de", "Montbron")
 fam2.hello_nom()
-print("\n")
+print("")
 
 moi = m.personne("Gilles", fam1)
 moi.bonjour()
