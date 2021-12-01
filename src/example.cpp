@@ -15,7 +15,7 @@ void famille::setNom(string lenom){
 
 void famille::hello_nom()
 {
-    cout << "Bonjour la famille " << this->getNom() << " !\n";
+    cout << "Bonjour la famille " << this->getNom() << " !" << endl;
 }
 
 
@@ -32,8 +32,7 @@ void famille_part::setParticule(string part) {
 void famille_part::hello_nom()
 {
     famille::hello_nom();
-    cout << "ou devrais-je dire " << this->getParticule() << " " << this->getNom() << "\n";
-    fflush(stdout);
+    cout << "ou devrais-je dire " << this->getParticule() << " " << this->getNom() << endl;
 }
 
 personne::personne(string prenom, famille fam) : prenom(prenom), fam(fam) {}
@@ -59,7 +58,7 @@ void personne::setFamille(famille la_fam) {
 }
 
 void personne::bonjour() {
-    cout << "Bonjour " << this->getPrenom() << " " << this->getFamille().getNom() << "\n";
+    cout << "Bonjour " << this->getPrenom() << " " << this->getFamille().getNom() << endl;
 }
 
 namespace py = pybind11;

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nartrack/Documents/tests_preliminaires/src/example.cpp
+pybind11/pybind11.h
+-
+iostream
+-
+example.h
+/home/nartrack/Documents/tests_preliminaires/src/example.h
+
+/home/nartrack/Documents/tests_preliminaires/src/example.h
+
+/home/nartrack/Documents/tests_preliminaires/src/main.cpp
+pybind11/pybind11.h
+-
+example.cpp
+/home/nartrack/Documents/tests_preliminaires/src/example.cpp
+
