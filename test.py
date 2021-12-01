@@ -1,4 +1,4 @@
-import main as m
+import app as m
 from mpi4py import MPI
 
 comm = MPI.COMM_WORLD

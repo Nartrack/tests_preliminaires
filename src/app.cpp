@@ -3,7 +3,7 @@
 using namespace std;
 
 namespace py = pybind11;
-PYBIND11_MODULE(main, m)
+PYBIND11_MODULE(app, m)
 {
     m.doc() = R"pbdoc(
         Pybind11 main plugin

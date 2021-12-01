@@ -4,4 +4,4 @@
 /home/nartrack/Documents/tests_preliminaires/build/CMakeFiles/list_install_components.dir
 /home/nartrack/Documents/tests_preliminaires/build/CMakeFiles/rebuild_cache.dir
 /home/nartrack/Documents/tests_preliminaires/build/CMakeFiles/edit_cache.dir
-/home/nartrack/Documents/tests_preliminaires/build/CMakeFiles/main.dir
+/home/nartrack/Documents/tests_preliminaires/build/CMakeFiles/app.dir

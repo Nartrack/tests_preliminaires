@@ -157,44 +157,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named app
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+app/fast:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
-src/main.o: src/main.cpp.o
+src/app.o: src/app.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/app.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/app.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
 
-src/main.i: src/main.cpp.i
+src/app.i: src/app.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/app.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/app.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
 
-src/main.s: src/main.cpp.s
+src/app.s: src/app.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/app.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/app.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
 
 # Help Target
 help:
@@ -208,10 +208,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... app"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 .PHONY : help
 
 
